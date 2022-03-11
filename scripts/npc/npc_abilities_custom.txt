@@ -164,12 +164,12 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "radius"                "450"
+                "radius"                "345"
             }
             "02"
             {
                 "var_type"              "FIELD_INTEGER"
-                "drag_speed"            "300"
+                "drag_speed"            "345"
             }
             "03"
             {

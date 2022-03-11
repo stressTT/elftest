@@ -6387,4 +6387,25 @@
 			"bonus_mana"		"0"
 		}
 	}
+	"item_recipe_dagon"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"103"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1250"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon"
+		"ItemRequirements"
+		{
+			"01"						"item_staff_of_wizardry;item_crown"
+		}
+	}
 }
