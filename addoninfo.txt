@@ -1,0 +1,20 @@
+"AddonInfo"
+{
+  "TeamCount" "6"
+  "maps"      "winter"
+  "IsPlayable"  "1"
+  "winter"
+  {
+    "MaxPlayers"                    "16"
+  }
+  
+  "Default_Keys"
+	{
+		"01"
+		{
+			"Key"       "L"
+			"Command"   "+WheelButton"
+			"Name"      "CustomCommand"
+		}
+	}
+}
