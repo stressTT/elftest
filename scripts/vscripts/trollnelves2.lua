@@ -295,6 +295,9 @@ function InitializeBuilder(hero)
     hero:AddItemByName("item_glyph_ability")
     hero:AddItemByName("item_aegis")
     hero:AddItemByName("item_aegis")
+    hero:AddItemByName("item_item_recipe_dagon")
+    hero:AddItemByName("item_item_recipe_dagon")
+    hero:AddItemByName("item_item_recipe_dagon")
     
     
     
@@ -463,6 +466,9 @@ function InitializeAngel(hero)
     hero:AddItemByName("item_root_ability")
     hero:AddItemByName("item_silence_ability")
     hero:AddItemByName("item_glyph_ability")
+    hero:AddItemByName("item_item_recipe_dagon")
+    hero:AddItemByName("item_item_recipe_dagon")
+    hero:AddItemByName("item_item_recipe_dagon")
     --if not string.match(GetMapName(),"halloween") then 
     --    hero:RemoveAbility("silence_datadriven")
     --end

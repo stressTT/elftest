@@ -16,7 +16,7 @@
 		"Ability7" 					""
 		"Ability8"					""
 		"Ability9"					""
-		"Ability10"					""
+		"Ability10"					"spirit_breaker_greater_bash"
 		"Ability11"					"tidehunter_kraken_shell"
 		"Ability12"   	    		"attribute_antibonuses"
 		"Ability13"   	    		""
@@ -255,7 +255,7 @@
 		"Ability11"   	    ""
 		"Ability12"   	    ""
 		"Ability13"   	    ""
-		"Ability14"   	    ""
+		"Ability14"   	    "spirit_breaker_greater_bash"
 		"Ability15"   	    "attribute_antibonuses"
 		"Ability16"   	    "antiblock"
 		

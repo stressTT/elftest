@@ -30,6 +30,104 @@
 		}		
 	}
 
+	"fountain_ability_mana"{
+		"BaseClass"					"ability_datadriven"
+		"AbilityTextureName"		"fountain_regen"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET || DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"					"1"
+		"ItemName"					"item_atk_spd_6"
+		"Hidden"					"1"
+				
+		"OnCreated"{
+			"ApplyModifier"{
+				"ModifierName"		"fountain_regen_mana"
+				"Target"			"CASTER"
+			}
+		}
+		"Modifiers"{
+			"fountain_regen_mana"{
+				"ThinkInterval"			"0.03"
+				"OnIntervalThink"{
+					"RunScript"{
+						"ScriptFile"	"custom_abilities.lua"
+						"Function"		"FountainRegenMana"
+						"Target" 		"CASTER"
+						"Radius"		"620"
+					}
+				}
+			}
+		}
+	}
+
+	"spirit_breaker_greater_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5355"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilitySound"					"Hero_Spirit_Breaker.GreaterBash"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportBonus"	"40"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance_pct"			"17 17 17 17"
+				"LinkedSpecialBonus"	"special_bonus_unique_spirit_breaker_1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage"				"0 0 0 0"
+				"LinkedSpecialBonus"	"special_bonus_unique_spirit_breaker_3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.1"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"knockback_duration"	"0.1"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"knockback_distance"	"100"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"knockback_height"		"50 50 50 50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed_pct"	"0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"movespeed_duration"	"0"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
 	"enigma_black_hole"
 	{
 		// General

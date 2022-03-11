@@ -11769,7 +11769,7 @@
 		{
 			"model"     "models/props_structures/bad_barracks001_melee.vmdl"
 		}
-	    "ModelScale"                "1.0"
+	    "ModelScale"                "0.2"
 	    "ModelRotation"             "180"
 		"HealthBarOffset"			"150"
 		"PlayerCanControl"			"1"
@@ -11780,15 +11780,7 @@
 	    //-----------------------------
 	    "Level"                     "2"
 	    "BuildTime"                 "2"
-	    "Upgrades"
-	    {
-	        "Count"     "1"
-	        "1"{
-				"unit_name"			"troll_hut_3"
-				"gold_cost"			"250"
-				"lumber_cost"		"0"
-			}
-	    }
+	   
 		"Requirements"{
 
 		}
@@ -11796,12 +11788,12 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"AbilityLayout"				"4"
-		"Ability1"					"gain_gold_team"
-		"Ability2"					"fountain_ability"
-		"Ability3"					"buy_lumber_1"
-		"Ability4"					"buy_lumber_8"
-		"Ability5"					"sell_lumber_1"
-		"Ability6"					"sell_lumber_8"
+		"Ability1"					""
+		"Ability2"					"fountain_ability_mana"
+		"Ability3"					""
+		"Ability4"					""
+		"Ability5"					""
+		"Ability6"					""
 		"Ability10"					""
 		"TeamGainGold"				"true"
 

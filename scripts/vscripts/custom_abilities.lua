@@ -986,6 +986,15 @@ function FountainRegen(event)
 	end
 end
 
+function FountainRegenMana(event)
+	local caster = event.caster
+	local radius = event.Radius
+	local units = FindUnitsInRadius(caster:GetTeamNumber() , caster:GetAbsOrigin() , nil , radius , DOTA_UNIT_TARGET_TEAM_ENEMY ,  DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_NONE, 0, false)
+	for _,unit in pairs(units) do
+		unit:SetMana(unit:GetMana() + unit:GetMaxMana() * -0.5)
+	end
+end
+
 function BuyLumberTroll(event)
 	local caster = event.caster
 	local playerID = caster.buyer

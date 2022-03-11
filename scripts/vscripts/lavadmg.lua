@@ -28,7 +28,7 @@ end
 
 function modifier_lava_damage_1:OnCreated()
     if not IsServer() then return end
-    self:StartIntervalThink( 0.08 )
+    self:StartIntervalThink( 0.004 )
 end
 
 function modifier_lava_damage_1:OnIntervalThink()
@@ -37,7 +37,7 @@ function modifier_lava_damage_1:OnIntervalThink()
             victim = self:GetParent(),
             attacker = self:GetParent(),
             ability = self,
-            damage = 10,
+            damage = 1,
             damage_type = DAMAGE_TYPE_PURE
         }
         ApplyDamage(damage_table)

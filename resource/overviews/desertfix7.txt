@@ -1,0 +1,8 @@
+desertfix7
+{
+	material materials/overviews/desertfix7.vmat
+	pos_x -9024
+	pos_y 9984
+	scale 17.750
+}
+
